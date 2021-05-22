@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { makeStyles } from "@material-ui/core/styles";
+import Wrapper from "./component/Header/Wrapper";
+import CardWrapper from "./component/Cardwrapper/CardWrapper";
+import { ReadMoreBtn } from "./component/Styledcomponents/StyledComponents";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "20px auto",
+  },
+  viewBtn: {
+    position: "relative",
+    top: "160px",
+  }
+}));
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <Wrapper />
+      <CardWrapper />
+      <ReadMoreBtn className={classes.viewBtn}>View all products</ReadMoreBtn>
     </div>
   );
 }
