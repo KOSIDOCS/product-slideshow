@@ -9958,11 +9958,6 @@ react-scripts@4.0.3:
   optionalDependencies:
     fsevents "^2.1.3"
 
-react-stacked-carousel@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/react-stacked-carousel/-/react-stacked-carousel-1.1.2.tgz#c2a647b881e5bef4937acb3202a132a5e0470122"
-  integrity sha512-cL78XHCVsZoG7qed676wG8yp38ovl1OapVtEDqxjYVu2xg+qX2vKY9WMkeoE0YpbrueF+2jRYfpxkND+bFhs7Q==
-
 react-transition-group@^4.4.0:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
